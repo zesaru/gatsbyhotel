@@ -1,24 +1,39 @@
 import React from "react"
 import { css } from "@emotion/core"
+import Navegacion from "./nav"
 
-const header = () => {
+const Header = () => {
   return (
     <header
       css={css`
         background-color: #333;
         padding: 1rem;
-        @media (minwidth: 768px) {
-          display: flex;
-          alignitems: center;
-          justify-content: space-between;
-        }
       `}
     >
-      <div>
-        <h1>Hotel Gastsby</h1>
+      <div
+        css={css`
+          max-width: 1200px;
+          margin: 0 auto;
+          @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        `}
+      >
+        <h1
+          css={css`
+            color: #fff;
+            text-align: center;
+          `}
+        >
+          Hotel Gatsby
+        </h1>
+
+        <Navegacion />
       </div>
     </header>
   )
 }
 
-export default header
+export default Header
