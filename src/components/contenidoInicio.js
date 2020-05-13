@@ -35,8 +35,6 @@ const ContenidoInicio = () => {
       }
     }
   `)
-  console.log("sddsdf")
-  console.log(informacion.allDatoCmsPagina.nodes[0])
 
   const { titulo, contenido, imagen } = informacion.allDatoCmsPagina.nodes[0]
 
